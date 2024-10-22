@@ -1,0 +1,17 @@
+
+echo -e "Dogs\\nCats\\nHamsters" > home_animals.txt\
+2  echo -e "Horses\\nCamels\\nDonkeys" > pack_animals.txt\
+3  ls\
+4  cat home_animals.txt pack_animals.txt > friend_human.txt\
+5  cat friend_human.txt \
+6  mv friend_human.txt best_frinds_human.txt\
+7  ls\
+8  mkdir animals\
+9  mv best_frinds_human.txt animals/\
+322  docker pull mysql\
+323  docker run --name mysql -e MYSQL_ROOT_PASSWORD=mavsesan343 -d mysql\
+324  docker exec -it mysql mysql -uroot -p\
+326  docker run -it ubuntu\
+1  apt update\
+2  apt install curl\
+3  apt remove curl

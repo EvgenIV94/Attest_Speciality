@@ -1,0 +1,405 @@
+{\rtf1\ansi\ansicpg1251\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red56\green185\blue199;\red86\green32\blue244;
+\red20\green153\blue2;\red170\green171\blue37;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c25546\c77007\c82023;\cssrgb\c41681\c25958\c96648;
+\cssrgb\c0\c65000\c0;\cssrgb\c72331\c71682\c18599;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 Last login: Mon Oct 21 21:59:54 on ttys000\
+You have new mail.\
+evgen@MacBook-Pro-Zena ~ % docker run -it ubuntu                               \
+root@9dfb7b378bcc:/# echo -e "Dogs\\nCats\\nHamsters" > home_animals.txt\
+root@9dfb7b378bcc:/# echo -e "Horses\\nCamels\\nDonkeys" > pack_animals.txt\
+root@9dfb7b378bcc:/# ls\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b \cf3 bin
+\f0\b0 \cf2    
+\f1\b \cf4 etc
+\f0\b0 \cf2                
+\f1\b \cf3 lib
+\f0\b0 \cf2     
+\f1\b \cf4 mnt
+\f0\b0 \cf2                
+\f1\b \cf4 proc
+\f0\b0 \cf2   
+\f1\b \cf3 sbin
+\f0\b0 \cf2   \cb5 tmp\cb1 \
+
+\f1\b \cf4 boot
+\f0\b0 \cf2   
+\f1\b \cf4 home
+\f0\b0 \cf2               
+\f1\b \cf3 lib64
+\f0\b0 \cf2   
+\f1\b \cf4 opt
+\f0\b0 \cf2                
+\f1\b \cf4 root
+\f0\b0 \cf2   
+\f1\b \cf4 srv
+\f0\b0 \cf2    
+\f1\b \cf4 usr
+\f0\b0 \cf2 \
+
+\f1\b \cf4 dev
+\f0\b0 \cf2    home_animals.txt  
+\f1\b \cf4 media
+\f0\b0 \cf2   pack_animals.txt  
+\f1\b \cf4 run
+\f0\b0 \cf2    
+\f1\b \cf4 sys
+\f0\b0 \cf2    
+\f1\b \cf4 var
+\f0\b0 \cf2 \
+root@9dfb7b378bcc:/# cat home_animals.txt pack_animals.txt > friend_human.txt\
+root@9dfb7b378bcc:/# cat friend_human.txt \
+Dogs\
+Cats\
+Hamsters\
+Horses\
+Camels\
+Donkeys\
+root@9dfb7b378bcc:/# mv friend_human.txt best_frinds_human.txt\
+root@9dfb7b378bcc:/# ls\
+best_frinds_human.txt  
+\f1\b \cf4 etc
+\f0\b0 \cf2                
+\f1\b \cf3 lib64
+\f0\b0 \cf2   pack_animals.txt  
+\f1\b \cf3 sbin
+\f0\b0 \cf2   
+\f1\b \cf4 usr
+\f0\b0 \cf2 \
+
+\f1\b \cf3 bin
+\f0\b0 \cf2                     
+\f1\b \cf4 home
+\f0\b0 \cf2               
+\f1\b \cf4 media
+\f0\b0 \cf2   
+\f1\b \cf4 proc
+\f0\b0 \cf2               
+\f1\b \cf4 srv
+\f0\b0 \cf2    
+\f1\b \cf4 var
+\f0\b0 \cf2 \
+
+\f1\b \cf4 boot
+\f0\b0 \cf2                    home_animals.txt  
+\f1\b \cf4 mnt
+\f0\b0 \cf2     
+\f1\b \cf4 root
+\f0\b0 \cf2               
+\f1\b \cf4 sys
+\f0\b0 \cf2 \
+
+\f1\b \cf4 dev
+\f0\b0 \cf2                     
+\f1\b \cf3 lib
+\f0\b0 \cf2                
+\f1\b \cf4 opt
+\f0\b0 \cf2     
+\f1\b \cf4 run
+\f0\b0 \cf2                \cb5 tmp\cb1 \
+root@9dfb7b378bcc:/# mkdir animals\
+root@9dfb7b378bcc:/# mv best_frinds_human.txt animals/\
+root@9dfb7b378bcc:/# history\
+    1  echo -e "Dogs\\nCats\\nHamsters" > home_animals.txt\
+    2  echo -e "Horses\\nCamels\\nDonkeys" > pack_animals.txt\
+    3  ls\
+    4  cat home_animals.txt pack_animals.txt > friend_human.txt\
+    5  cat friend_human.txt \
+    6  mv friend_human.txt best_frinds_human.txt\
+    7  ls\
+    8  mkdir animals\
+    9  mv best_frinds_human.txt animals/\
+   10  history\
+root@9dfb7b378bcc:/# docker pull mysql\
+bash: docker: command not found\
+root@9dfb7b378bcc:/# exit\
+exit\
+evgen@MacBook-Pro-Zena ~ % docker pull mysql\
+Using default tag: latest\
+latest: Pulling from library/mysql\
+cd68caa5febe: Download complete \
+eba3c26198b7: Download complete \
+aa23d877fa04: Download complete \
+c0880e4b3737: Download complete \
+4bab267f9ce1: Download complete \
+a143609ddd2d: Download complete \
+78308a3437c4: Download complete \
+607f86c00053: Download complete \
+e575f6d9b17a: Download complete \
+97f7c8c33abe: Download complete \
+Digest: sha256:fd8d1b4e287c49e1e35eb5a103f337111947662130eb8a3e6c3e823813f47f7d\
+Status: Downloaded newer image for mysql:latest\
+docker.io/library/mysql:latest\
+\
+
+\f1\b What's next:
+\f0\b0 \
+    View a summary of image vulnerabilities and recommendations \uc0\u8594  \cf3 docker scout quickview mysql\cf2 \
+evgen@MacBook-Pro-Zena ~ % docker run --name mysql -e MYSQL_ROOT_PASSWORD=mavsesan343 -d mysql\
+f4ed0bddf05b2626eb17d09a6714f8d2a8162ed290ba67a2cb694cde8567b899\
+evgen@MacBook-Pro-Zena ~ % docker exec -it mysql mysql -uroot -p\
+Enter password: \
+Welcome to the MySQL monitor.  Commands end with ; or \\g.\
+Your MySQL connection id is 8\
+Server version: 9.1.0 MySQL Community Server - GPL\
+\
+Copyright (c) 2000, 2024, Oracle and/or its affiliates.\
+\
+Oracle is a registered trademark of Oracle Corporation and/or its\
+affiliates. Other names may be trademarks of their respective\
+owners.\
+\
+Type 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\
+\
+mysql> exit\
+Bye\
+\
+
+\f1\b What's next:
+\f0\b0 \
+    Try Docker Debug for seamless, persistent debugging tools in any container or image \uc0\u8594  \cf3 docker debug mysql\cf2 \
+    Learn more at https://docs.docker.com/go/debug-cli/\
+evgen@MacBook-Pro-Zena ~ % docker exec -it mysql mysql -uroot -p\
+Enter password: \
+Welcome to the MySQL monitor.  Commands end with ; or \\g.\
+Your MySQL connection id is 9\
+Server version: 9.1.0 MySQL Community Server - GPL\
+\
+Copyright (c) 2000, 2024, Oracle and/or its affiliates.\
+\
+Oracle is a registered trademark of Oracle Corporation and/or its\
+affiliates. Other names may be trademarks of their respective\
+owners.\
+\
+Type 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\
+\
+mysql> apt update\
+    -> exit\
+    -> q\
+    -> \
+    -> ^C\
+mysql> exit\
+Bye\
+\
+
+\f1\b What's next:
+\f0\b0 \
+    Try Docker Debug for seamless, persistent debugging tools in any container or image \uc0\u8594  \cf3 docker debug mysql\cf2 \
+    Learn more at https://docs.docker.com/go/debug-cli/\
+evgen@MacBook-Pro-Zena ~ % docker run -it ubuntu\
+root@3e446701b732:/# apt update\
+Get:1 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]\
+Get:2 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]\
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]\
+Get:4 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [13.7 kB]\
+Get:5 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [715 kB]\
+Get:6 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]\
+Get:7 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]\
+Get:8 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [541 kB]\
+Get:9 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [491 kB]\
+Get:10 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]    \
+Get:11 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]\
+Get:12 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]\
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [759 kB]\
+Get:14 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [915 kB]\
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [491 kB]\
+Get:16 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [18.2 kB]\
+Get:17 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [11.8 kB]\
+Fetched 26.2 MB in 40s (655 kB/s)                                              \
+Reading package lists... Done\
+Building dependency tree... Done\
+Reading state information... Done\
+3 packages can be upgraded. Run 'apt list --upgradable' to see them.\
+root@3e446701b732:/# apt install curl\
+Reading package lists... Done\
+Building dependency tree... Done\
+Reading state information... Done\
+The following additional packages will be installed:\
+  ca-certificates krb5-locales libbrotli1 libcurl4t64 libgssapi-krb5-2\
+  libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 libldap-common libldap2\
+  libnghttp2-14 libpsl5t64 librtmp1 libsasl2-2 libsasl2-modules\
+  libsasl2-modules-db libssh-4 openssl publicsuffix\
+Suggested packages:\
+  krb5-doc krb5-user libsasl2-modules-gssapi-mit\
+  | libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap libsasl2-modules-otp\
+  libsasl2-modules-sql\
+The following NEW packages will be installed:\
+  ca-certificates curl krb5-locales libbrotli1 libcurl4t64 libgssapi-krb5-2\
+  libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 libldap-common libldap2\
+  libnghttp2-14 libpsl5t64 librtmp1 libsasl2-2 libsasl2-modules\
+  libsasl2-modules-db libssh-4 openssl publicsuffix\
+0 upgraded, 21 newly installed, 0 to remove and 3 not upgraded.\
+Need to get 3563 kB of archives.\
+After this operation, 9199 kB of additional disk space will be used.\
+Do you want to continue? [Y/n] y\
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 openssl amd64 3.0.13-0ubuntu3.4 [1003 kB]\
+Get:2 http://archive.ubuntu.com/ubuntu noble/main amd64 ca-certificates all 20240203 [159 kB]\
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 krb5-locales all 1.20.1-6ubuntu2.1 [14.0 kB]\
+Get:4 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libkrb5support0 amd64 1.20.1-6ubuntu2.1 [33.6 kB]\
+Get:5 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libk5crypto3 amd64 1.20.1-6ubuntu2.1 [81.7 kB]\
+Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 libkeyutils1 amd64 1.6.3-3build1 [9490 B]\
+Get:7 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libkrb5-3 amd64 1.20.1-6ubuntu2.1 [347 kB]\
+Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgssapi-krb5-2 amd64 1.20.1-6ubuntu2.1 [143 kB]\
+Get:9 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libnghttp2-14 amd64 1.59.0-1ubuntu0.1 [74.3 kB]\
+Get:10 http://archive.ubuntu.com/ubuntu noble/main amd64 libpsl5t64 amd64 0.21.2-1.1build1 [57.1 kB]\
+Get:11 http://archive.ubuntu.com/ubuntu noble/main amd64 publicsuffix all 20231001.0357-0.1 [129 kB]\
+Get:12 http://archive.ubuntu.com/ubuntu noble/main amd64 libbrotli1 amd64 1.1.0-2build2 [331 kB]\
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsasl2-modules-db amd64 2.1.28+dfsg1-5ubuntu3.1 [20.4 kB]\
+Get:14 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsasl2-2 amd64 2.1.28+dfsg1-5ubuntu3.1 [53.2 kB]\
+Get:15 http://archive.ubuntu.com/ubuntu noble/main amd64 libldap2 amd64 2.6.7+dfsg-1~exp1ubuntu8 [195 kB]\
+Get:16 http://archive.ubuntu.com/ubuntu noble/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2build7 [56.3 kB]\
+Get:17 http://archive.ubuntu.com/ubuntu noble/main amd64 libssh-4 amd64 0.10.6-2build2 [188 kB]\
+Get:18 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl4t64 amd64 8.5.0-2ubuntu10.4 [341 kB]\
+Get:19 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 curl amd64 8.5.0-2ubuntu10.4 [227 kB]\
+Get:20 http://archive.ubuntu.com/ubuntu noble/main amd64 libldap-common all 2.6.7+dfsg-1~exp1ubuntu8 [31.4 kB]\
+Get:21 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsasl2-modules amd64 2.1.28+dfsg1-5ubuntu3.1 [69.9 kB]\
+Fetched 3563 kB in 4s (947 kB/s)\cf6             \cf2 \
+debconf: delaying package configuration, since apt-utils is not installed\
+Selecting previously unselected package openssl.\
+(Reading database ... 4379 files and directories currently installed.)\
+Preparing to unpack .../00-openssl_3.0.13-0ubuntu3.4_amd64.deb ...\
+Unpacking openssl (3.0.13-0ubuntu3.4) ...\
+Selecting previously unselected package ca-certificates.\
+Preparing to unpack .../01-ca-certificates_20240203_all.deb ...\
+Unpacking ca-certificates (20240203) ...\
+Selecting previously unselected package krb5-locales.\
+Preparing to unpack .../02-krb5-locales_1.20.1-6ubuntu2.1_all.deb ...\
+Unpacking krb5-locales (1.20.1-6ubuntu2.1) ...\
+Selecting previously unselected package libkrb5support0:amd64.\
+Preparing to unpack .../03-libkrb5support0_1.20.1-6ubuntu2.1_amd64.deb ...\
+Unpacking libkrb5support0:amd64 (1.20.1-6ubuntu2.1) ...\
+Selecting previously unselected package libk5crypto3:amd64.\
+Preparing to unpack .../04-libk5crypto3_1.20.1-6ubuntu2.1_amd64.deb ...\
+Unpacking libk5crypto3:amd64 (1.20.1-6ubuntu2.1) ...\
+Selecting previously unselected package libkeyutils1:amd64.\
+Preparing to unpack .../05-libkeyutils1_1.6.3-3build1_amd64.deb ...\
+Unpacking libkeyutils1:amd64 (1.6.3-3build1) ...\
+Selecting previously unselected package libkrb5-3:amd64.\
+Preparing to unpack .../06-libkrb5-3_1.20.1-6ubuntu2.1_amd64.deb ...\
+Unpacking libkrb5-3:amd64 (1.20.1-6ubuntu2.1) ...\
+Selecting previously unselected package libgssapi-krb5-2:amd64.\
+Preparing to unpack .../07-libgssapi-krb5-2_1.20.1-6ubuntu2.1_amd64.deb ...\
+Unpacking libgssapi-krb5-2:amd64 (1.20.1-6ubuntu2.1) ...\
+Selecting previously unselected package libnghttp2-14:amd64.\
+Preparing to unpack .../08-libnghttp2-14_1.59.0-1ubuntu0.1_amd64.deb ...\
+Unpacking libnghttp2-14:amd64 (1.59.0-1ubuntu0.1) ...\
+Selecting previously unselected package libpsl5t64:amd64.\
+Preparing to unpack .../09-libpsl5t64_0.21.2-1.1build1_amd64.deb ...\
+Unpacking libpsl5t64:amd64 (0.21.2-1.1build1) ...\
+Selecting previously unselected package publicsuffix.\
+Preparing to unpack .../10-publicsuffix_20231001.0357-0.1_all.deb ...\
+Unpacking publicsuffix (20231001.0357-0.1) ...\
+Selecting previously unselected package libbrotli1:amd64.\
+Preparing to unpack .../11-libbrotli1_1.1.0-2build2_amd64.deb ...\
+Unpacking libbrotli1:amd64 (1.1.0-2build2) ...\
+Selecting previously unselected package libsasl2-modules-db:amd64.\
+Preparing to unpack .../12-libsasl2-modules-db_2.1.28+dfsg1-5ubuntu3.1_amd64.deb ...\
+Unpacking libsasl2-modules-db:amd64 (2.1.28+dfsg1-5ubuntu3.1) ...\
+Selecting previously unselected package libsasl2-2:amd64.\
+Preparing to unpack .../13-libsasl2-2_2.1.28+dfsg1-5ubuntu3.1_amd64.deb ...\
+Unpacking libsasl2-2:amd64 (2.1.28+dfsg1-5ubuntu3.1) ...\
+Selecting previously unselected package libldap2:amd64.\
+Preparing to unpack .../14-libldap2_2.6.7+dfsg-1~exp1ubuntu8_amd64.deb ...\
+Unpacking libldap2:amd64 (2.6.7+dfsg-1~exp1ubuntu8) ...\
+Selecting previously unselected package librtmp1:amd64.\
+Preparing to unpack .../15-librtmp1_2.4+20151223.gitfa8646d.1-2build7_amd64.deb ...\
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build7) ...\
+Selecting previously unselected package libssh-4:amd64.\
+Preparing to unpack .../16-libssh-4_0.10.6-2build2_amd64.deb ...\
+Unpacking libssh-4:amd64 (0.10.6-2build2) ...\
+Selecting previously unselected package libcurl4t64:amd64.\
+Preparing to unpack .../17-libcurl4t64_8.5.0-2ubuntu10.4_amd64.deb ...\
+Unpacking libcurl4t64:amd64 (8.5.0-2ubuntu10.4) ...\
+Selecting previously unselected package curl.\
+Preparing to unpack .../18-curl_8.5.0-2ubuntu10.4_amd64.deb ...\
+Unpacking curl (8.5.0-2ubuntu10.4) ...\
+Selecting previously unselected package libldap-common.\
+Preparing to unpack .../19-libldap-common_2.6.7+dfsg-1~exp1ubuntu8_all.deb ...\
+Unpacking libldap-common (2.6.7+dfsg-1~exp1ubuntu8) ...\
+Selecting previously unselected package libsasl2-modules:amd64.\
+Preparing to unpack .../20-libsasl2-modules_2.1.28+dfsg1-5ubuntu3.1_amd64.deb ...\
+Unpacking libsasl2-modules:amd64 (2.1.28+dfsg1-5ubuntu3.1) ...\
+Setting up libkeyutils1:amd64 (1.6.3-3build1) ...\
+Setting up libbrotli1:amd64 (1.1.0-2build2) ...\
+Setting up libsasl2-modules:amd64 (2.1.28+dfsg1-5ubuntu3.1) ...\
+Setting up libpsl5t64:amd64 (0.21.2-1.1build1) ...\
+Setting up libnghttp2-14:amd64 (1.59.0-1ubuntu0.1) ...\
+Setting up krb5-locales (1.20.1-6ubuntu2.1) ...\
+Setting up libldap-common (2.6.7+dfsg-1~exp1ubuntu8) ...\
+Setting up libkrb5support0:amd64 (1.20.1-6ubuntu2.1) ...\
+Setting up libsasl2-modules-db:amd64 (2.1.28+dfsg1-5ubuntu3.1) ...\
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build7) ...\
+Setting up libk5crypto3:amd64 (1.20.1-6ubuntu2.1) ...\
+Setting up libsasl2-2:amd64 (2.1.28+dfsg1-5ubuntu3.1) ...\
+Setting up libkrb5-3:amd64 (1.20.1-6ubuntu2.1) ...\
+Setting up openssl (3.0.13-0ubuntu3.4) ...\
+Setting up publicsuffix (20231001.0357-0.1) ...\
+Setting up libldap2:amd64 (2.6.7+dfsg-1~exp1ubuntu8) ...\
+Setting up ca-certificates (20240203) ...\
+debconf: unable to initialize frontend: Dialog\
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79.)\
+debconf: falling back to frontend: Readline\
+debconf: unable to initialize frontend: Readline\
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.38.2 /usr/local/share/perl/5.38.2 /usr/lib/x86_64-linux-gnu/perl5/5.38 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.38 /usr/share/perl/5.38 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8.)\
+debconf: falling back to frontend: Teletype\
+Updating certificates in /etc/ssl/certs...\
+146 added, 0 removed; done.\
+Setting up libgssapi-krb5-2:amd64 (1.20.1-6ubuntu2.1) ...\
+Setting up libssh-4:amd64 (0.10.6-2build2) ...\
+Setting up libcurl4t64:amd64 (8.5.0-2ubuntu10.4) ...\
+Setting up curl (8.5.0-2ubuntu10.4) ...\
+Processing triggers for libc-bin (2.39-0ubuntu8.3) ...\
+Processing triggers for ca-certificates (20240203) ...\
+Updating certificates in /etc/ssl/certs...\
+0 added, 0 removed; done.\
+Running hooks in /etc/ca-certificates/update.d...\
+done.\
+root@3e446701b732:/# apt remove curl\
+Reading package lists... Done\
+Building dependency tree... Done\
+Reading state information... Done\
+The following packages were automatically installed and are no longer required:\
+  krb5-locales libbrotli1 libcurl4t64 libgssapi-krb5-2 libk5crypto3\
+  libkeyutils1 libkrb5-3 libkrb5support0 libldap-common libldap2 libnghttp2-14\
+  libpsl5t64 librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libssh-4\
+  publicsuffix\
+Use 'apt autoremove' to remove them.\
+The following packages will be REMOVED:\
+  curl\
+0 upgraded, 0 newly installed, 1 to remove and 3 not upgraded.\
+After this operation, 534 kB disk space will be freed.\
+Do you want to continue? [Y/n] y\
+(Reading database ... 5012 files and directories currently installed.)\
+Removing curl (8.5.0-2ubuntu10.4) ...\
+root@3e446701b732:/# history\
+    1  apt update\
+    2  apt install curl\
+    3  apt remove curl\
+    4  history\
+root@3e446701b732:/# exit\
+exit\
+evgen@MacBook-Pro-Zena ~ % history\
+  311  mysql -u root -p\
+  312  sql\
+  313  mysql -u root -p\
+  314  mysql --version\
+  315  sql --version\
+  316  show database\
+  317  mysql\
+  318  docker --version\
+  319  docker run -it ubuntu\
+  320  docker pull ubuntu\\n\
+  321  docker run -it ubuntu\
+  322  docker pull mysql\
+  323  docker run --name mysql -e MYSQL_ROOT_PASSWORD=mavsesan343 -d mysql\
+  324  docker exec -it mysql mysql -uroot -p\
+  325  docker exec -it mysql mysql -uroot -p\
+  326  docker run -it ubuntu\
+evgen@MacBook-Pro-Zena ~ % \
+}
